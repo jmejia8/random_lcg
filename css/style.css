@@ -67,4 +67,6 @@ input[type=text]:focus{
 	padding: 10px;
 	font-family: monospace;
 	font-size: 10pt;
+	display: none;
+	min-height: 100px;
 }

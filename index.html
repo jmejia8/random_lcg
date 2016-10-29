@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Genereador de números aleatorios</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/random.js"></script>
 </head>
 <body>
 
@@ -16,20 +17,17 @@
 		</p>
 
 		<div class="generator_box">
-			<form>
+			<form method="post" action="javascript: void(0) ;">
 				<div class="limits">
 					<input type="text" placeholder="Valor Mínimo" name="min" id="min">
 					<input type="text" placeholder="Valor Máximo" name="max" id="max">
-					<input type="text" placeholder="Cantidad" name="count">
+					<input type="text" placeholder="Cantidad" id="total">
 				</div>
-				<button>Generar</button>
+				<button onclick="javascript: generate();">Generar</button>
 			</form>
 		</div>
 
-		<div class="output">
-		1 2 5 8 4 6 2  56 5 9 6 59 9 65 
-		6 65 4 654 8 65 4 8 6 5 4  7987 6 5 4 3 21  6 54 8 6  31 54
-		</div>
+		<div class="output" id="output"></div>
 
 
 	</article>
